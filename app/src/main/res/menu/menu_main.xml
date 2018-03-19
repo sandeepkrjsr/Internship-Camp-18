@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_share"
+        android:orderInCategory="100"
+        android:title="Share"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_procedure"
+        android:orderInCategory="100"
+        android:title="Procedure"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_tnc"
+        android:orderInCategory="100"
+        android:title="Terms and Conditions"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_faq"
+        android:orderInCategory="100"
+        android:title="FAQs"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_aboutus"
+        android:orderInCategory="100"
+        android:title="About Us"
+        app:showAsAction="never" />
+</menu>

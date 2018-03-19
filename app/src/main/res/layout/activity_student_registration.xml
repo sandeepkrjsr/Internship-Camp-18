@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_weight="0.45"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2018"
+            android:textSize="@dimen/huge"
+            android:textColor="@color/grey_light"
+            android:textStyle="bold"
+            android:fontFamily="@font/monserrat"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/great"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Internship Camp"
+            android:textSize="@dimen/big"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:fontFamily="@font/monserrat"
+            android:gravity="center_vertical"
+            android:padding="@dimen/medium"/>
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo_ecell"
+            android:layout_marginTop="@dimen/small"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/st_personal"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/large">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello !"
+            android:textSize="@dimen/great"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:fontFamily="@font/monserrat"
+            android:paddingLeft="@dimen/bytes"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You need to create an account"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:fontFamily="@font/monserrat"
+            android:paddingBottom="@dimen/great"
+            android:paddingLeft="@dimen/bytes"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/st_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:fontFamily="@font/monserrat"
+                android:inputType="textCapWords" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/st_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:fontFamily="@font/monserrat"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/st_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile"
+                android:fontFamily="@font/monserrat"
+                android:inputType="phone" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/st_hometown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hometown"
+                android:fontFamily="@font/monserrat"
+                android:inputType="textCapWords" />
+        </android.support.design.widget.TextInputLayout>
+        <RadioGroup
+            android:id="@+id/st_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/nibbles"
+            android:layout_marginTop="@dimen/small"
+            android:weightSum="1">
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_weight="0.6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:fontFamily="@font/monserrat"/>
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_weight="0.6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:fontFamily="@font/monserrat"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/st_professional"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/large">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="College Details"
+            android:textSize="@dimen/great"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:fontFamily="@font/monserrat"
+            android:paddingLeft="@dimen/bytes"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tell us about your college"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:fontFamily="@font/monserrat"
+            android:paddingBottom="@dimen/great"
+            android:paddingLeft="@dimen/bytes"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/st_college"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="College"
+                android:fontFamily="@font/monserrat"
+                android:inputType="textCapWords" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/st_roll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Roll No."
+                android:fontFamily="@font/monserrat"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/st_branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Branch"
+                android:fontFamily="@font/monserrat"
+                android:inputType="textCapWords" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <android.support.design.widget.TextInputLayout
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/st_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Academic Year"
+                    android:fontFamily="@font/monserrat"
+                    android:inputType="textCapWords" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/st_batch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Year of passing"
+                    android:fontFamily="@font/monserrat"
+                    android:inputType="textCapWords" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/st_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:fontFamily="@font/monserrat"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_weight="0.45"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="NEXT"
+        android:textSize="@dimen/big"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:fontFamily="@font/monserrat"
+        android:gravity="center" />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_weight="0.45"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo_ecell"
+            android:layout_marginTop="@dimen/small"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/huge">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/logo_icamp"
+            android:padding="@dimen/large"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="0.45"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2018"
+            android:textSize="@dimen/huge"
+            android:textColor="@color/grey_light"
+            android:textStyle="bold"
+            android:fontFamily="@font/monserrat"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Internship Camp"
+            android:textSize="@dimen/big"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:fontFamily="@font/monserrat"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <!--<TextView
+        android:layout_weight="0.45"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="KIIT E-Cell"
+        android:textSize="@dimen/big"
+        android:textColor="@color/grey_light"
+        android:fontFamily="@font/monserrat"
+        android:gravity="center" />-->
+
+</LinearLayout>

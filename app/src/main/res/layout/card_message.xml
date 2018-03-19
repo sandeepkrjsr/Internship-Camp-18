@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_rectangle"
+    android:padding="@dimen/small"
+    android:layout_margin="@dimen/small"
+    android:id="@+id/message_card">
+
+    <TextView
+        android:id="@+id/msg_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="@dimen/large"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/monserrat"/>
+    <TextView
+        android:id="@+id/msg_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textColor="@color/grey_light"
+        android:fontFamily="@font/monserrat" />
+    <TextView
+        android:id="@+id/msg_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:fontFamily="@font/monserrat"
+        android:gravity="center_vertical" />
+
+</LinearLayout>

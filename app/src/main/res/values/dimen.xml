@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bits">2dp</dimen>
+    <dimen name="nibbles">4dp</dimen>
+    <dimen name="bytes">8dp</dimen>
+    <dimen name="small">12dp</dimen>
+    <dimen name="medium">16dp</dimen>
+    <dimen name="big">20dp</dimen>
+    <dimen name="large">24dp</dimen>
+    <dimen name="great">36dp</dimen>
+    <dimen name="huge">48dp</dimen>
+
+    <dimen name="elevation">2dp</dimen>
+</resources>

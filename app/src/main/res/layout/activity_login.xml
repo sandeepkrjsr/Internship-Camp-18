@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_weight="0.45"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2018"
+            android:textSize="@dimen/huge"
+            android:textColor="@color/grey_light"
+            android:textStyle="bold"
+            android:fontFamily="@font/monserrat"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/great"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Internship Camp"
+            android:textSize="@dimen/big"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:fontFamily="@font/monserrat"
+            android:gravity="center_vertical"
+            android:padding="@dimen/medium"/>
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo_ecell"
+            android:layout_marginTop="@dimen/small"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/large">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/logo_icamp"
+            android:padding="@dimen/huge"/>
+        <TextView
+            android:id="@+id/student_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:textSize="@dimen/great"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:fontFamily="@font/monserrat"
+            android:paddingLeft="@dimen/bytes"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:fontFamily="@font/monserrat"
+            android:paddingBottom="@dimen/large"
+            android:paddingLeft="@dimen/bytes"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/nibbles">
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:fontFamily="@font/monserrat"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/nibbles">
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:fontFamily="@font/monserrat"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_weight="0.45"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="SIGN IN"
+        android:textSize="@dimen/big"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:fontFamily="@font/monserrat"
+        android:gravity="center" />
+
+    <!--<LinearLayout
+        android:layout_weight="0.45"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/signin"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SIGN IN"
+            android:textSize="@dimen/big"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:fontFamily="@font/monserrat"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/register"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SIGN IN"
+            android:textSize="@dimen/big"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:fontFamily="@font/monserrat"
+            android:gravity="center" />
+    </LinearLayout>-->
+
+</LinearLayout>

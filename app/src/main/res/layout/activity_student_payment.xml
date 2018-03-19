@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_weight="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2018"
+            android:textSize="@dimen/huge"
+            android:textColor="@color/grey_light"
+            android:textStyle="bold"
+            android:fontFamily="@font/monserrat"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/great"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Internship Camp"
+            android:textSize="@dimen/big"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:fontFamily="@font/monserrat"
+            android:gravity="center_vertical"
+            android:padding="@dimen/medium"/>
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo_ecell"
+            android:layout_marginTop="@dimen/small"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/large">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One last thing."
+            android:textSize="@dimen/great"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:fontFamily="@font/monserrat"
+            android:paddingLeft="@dimen/bytes"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just one last step left, please pay the registration fee of ₹ 400/-"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:fontFamily="@font/monserrat"
+            android:paddingBottom="@dimen/great"
+            android:paddingLeft="@dimen/bytes"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can pay your fee using one of the following options"
+            android:textColor="@color/grey_light"
+            android:textStyle="bold"
+            android:fontFamily="@font/monserrat"
+            android:paddingBottom="@dimen/large"
+            android:paddingLeft="@dimen/bytes"/>
+
+        <ImageView
+            android:id="@+id/paytm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/huge"
+            android:src="@drawable/logo_paytm"
+            android:background="@drawable/bg_rectangle"
+            android:padding="@dimen/small"
+            android:layout_margin="@dimen/nibbles"
+            android:clickable="true"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/huge"
+            android:src="@drawable/logo_instamojo"
+            android:background="@drawable/bg_rectangle"
+            android:padding="@dimen/small"
+            android:layout_margin="@dimen/nibbles"
+            android:clickable="true"/>
+    </LinearLayout>
+
+</LinearLayout>

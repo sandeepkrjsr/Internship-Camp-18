@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "469527775195",
+    "firebase_url": "https://icamp-18.firebaseio.com",
+    "project_id": "icamp-18",
+    "storage_bucket": "icamp-18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469527775195:android:11f0eb30f9a6ffb0",
+        "android_client_info": {
+          "package_name": "com.ecell.icamp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469527775195-aij4qksac5f4uotqpvppgl8qb24j7gvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL2N1UPIfJvFyYy23ugt4cN6BqaKB1pdI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
